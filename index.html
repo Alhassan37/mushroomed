@@ -1,0 +1,2110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mushroomed - Nature's Iron Powerhouse | Premium Iron-Fortified Oyster Mushroom Snacks</title>
+    <meta name="description" content="Premium iron-fortified oyster mushroom snacks, powder, and animal feed. Natural, healthy, and perfect for anemia prevention. Rich in 33mg iron per serving.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root {
+            /* Brand Colors */
+            --primary-green: #2d5016;
+            --primary-brown: #8b6914;
+            --accent-orange: #ff6b35;
+            --accent-red: #e63946;
+            --cream: #faf3e0;
+            --white: #ffffff;
+            --dark-text: #2c3e50;
+            --light-text: #6c757d;
+            --iron-gray: #708090;
+            
+            /* Semantic Colors */
+            --success: #28a745;
+            --warning: #ffc107;
+            --info: #17a2b8;
+            
+            /* Spacing */
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 1rem;
+            --spacing-md: 1.5rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+            
+            /* Typography */
+            --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            --font-heading: 'Arial Black', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-primary);
+            color: var(--dark-text);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-brown));
+            padding: 1rem 2rem;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            color: var(--white);
+            text-decoration: none;
+            font-family: var(--font-heading);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-orange);
+        }
+
+        .lang-switcher {
+            background: var(--white);
+            color: var(--primary-green);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .lang-switcher:hover {
+            transform: scale(1.05);
+        }
+
+        .cart-icon {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -8px;
+            right: -8px;
+            background: var(--accent-red);
+            color: var(--white);
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.75rem;
+            font-weight: bold;
+        }
+
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            margin-top: 80px;
+            background: linear-gradient(135deg, #2d5016 0%, #8b6914 100%);
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><path d="M50 10 Q30 30 50 50 Q70 30 50 10" fill="rgba(255,255,255,0.03)"/></svg>') repeat;
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-family: var(--font-heading);
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .tagline {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            font-weight: 300;
+            color: var(--accent-orange);
+        }
+
+        .hero-description {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .btn-primary {
+            background: var(--accent-orange);
+            color: var(--white);
+            box-shadow: 0 4px 15px rgba(255, 107, 53, 0.4);
+        }
+
+        .btn-primary:hover {
+            background: #ff5722;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(255, 107, 53, 0.6);
+        }
+
+        .btn-secondary {
+            background: var(--white);
+            color: var(--primary-green);
+        }
+
+        .btn-secondary:hover {
+            background: var(--cream);
+            transform: translateY(-2px);
+        }
+
+        /* Iron Badge */
+        .iron-badge {
+            background: linear-gradient(135deg, var(--iron-gray), #a9a9a9);
+            color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            display: inline-block;
+            margin: 1rem 0;
+            font-weight: bold;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: var(--primary-green);
+            font-family: var(--font-heading);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.2rem;
+            color: var(--light-text);
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Products Grid */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .product-card {
+            background: var(--white);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .product-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: var(--accent-red);
+            color: var(--white);
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.85rem;
+            font-weight: bold;
+            z-index: 10;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            background: linear-gradient(135deg, var(--cream), #e8dcc4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .product-info {
+            padding: 1.5rem;
+        }
+
+        .product-name {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .product-description {
+            color: var(--light-text);
+            margin-bottom: 1rem;
+            font-size: 0.95rem;
+        }
+
+        .product-price {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-orange);
+        }
+
+        .weight {
+            color: var(--light-text);
+            font-size: 0.9rem;
+        }
+
+        .iron-content {
+            background: linear-gradient(135deg, var(--iron-gray), #a9a9a9);
+            color: var(--white);
+            padding: 0.5rem;
+            border-radius: 10px;
+            text-align: center;
+            margin-bottom: 1rem;
+            font-weight: bold;
+        }
+
+        .add-to-cart {
+            width: 100%;
+            padding: 0.8rem;
+            background: var(--primary-green);
+            color: var(--white);
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .add-to-cart:hover {
+            background: var(--primary-brown);
+            transform: scale(1.02);
+        }
+
+        /* Benefits Section */
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+
+        .benefit-card {
+            background: linear-gradient(135deg, var(--cream), var(--white));
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .benefit-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .benefit-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: var(--primary-green);
+            margin-bottom: 0.5rem;
+        }
+
+        .benefit-text {
+            color: var(--light-text);
+            font-size: 0.95rem;
+        }
+
+        /* Educational Content */
+        .education-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .education-card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-left: 5px solid var(--accent-orange);
+        }
+
+        .education-card h3 {
+            color: var(--primary-green);
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .education-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .education-card li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .education-card li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        /* Video Section */
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .video-card {
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .video-card iframe {
+            width: 100%;
+            height: 250px;
+            border: none;
+        }
+
+        /* Animal Feed Section */
+        .feed-products {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .feed-card {
+            background: linear-gradient(135deg, var(--primary-brown), #a67c00);
+            color: var(--white);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        }
+
+        .feed-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .feed-features {
+            margin: 1.5rem 0;
+        }
+
+        .feed-features li {
+            padding: 0.5rem 0;
+            list-style: none;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .feed-features li::before {
+            content: '🌾';
+            position: absolute;
+            left: 0;
+        }
+
+        /* FAQ Section */
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--white);
+            margin-bottom: 1rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 1.5rem;
+            cursor: pointer;
+            font-weight: bold;
+            color: var(--primary-green);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question:hover {
+            background: var(--cream);
+        }
+
+        .faq-answer {
+            padding: 0 1.5rem;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .faq-answer.active {
+            padding: 1.5rem;
+            max-height: 500px;
+        }
+
+        /* Contact Form */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--accent-orange);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+            color: var(--dark-text);
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.8rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-family: inherit;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-green);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        /* Social Media */
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 2rem 0;
+        }
+
+        .social-icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--primary-green);
+            color: var(--white);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .social-icon:hover {
+            background: var(--accent-orange);
+            transform: scale(1.1);
+        }
+
+        /* Shopping Cart Sidebar */
+        .cart-sidebar {
+            position: fixed;
+            right: -400px;
+            top: 0;
+            width: 400px;
+            height: 100vh;
+            background: var(--white);
+            box-shadow: -5px 0 20px rgba(0,0,0,0.2);
+            z-index: 2000;
+            transition: right 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .cart-sidebar.active {
+            right: 0;
+        }
+
+        .cart-header {
+            padding: 1.5rem;
+            background: var(--primary-green);
+            color: var(--white);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .close-cart {
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .cart-items {
+            flex: 1;
+            overflow-y: auto;
+            padding: 1.5rem;
+        }
+
+        .cart-item {
+            display: flex;
+            gap: 1rem;
+            padding: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+            align-items: center;
+        }
+
+        .cart-item-image {
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+            background: var(--cream);
+        }
+
+        .cart-item-info {
+            flex: 1;
+        }
+
+        .cart-item-name {
+            font-weight: bold;
+            color: var(--dark-text);
+        }
+
+        .cart-item-price {
+            color: var(--accent-orange);
+            font-weight: bold;
+        }
+
+        .cart-item-quantity {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .qty-btn {
+            background: var(--cream);
+            border: none;
+            width: 25px;
+            height: 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .cart-footer {
+            padding: 1.5rem;
+            border-top: 2px solid var(--cream);
+            background: var(--cream);
+        }
+
+        .cart-total {
+            display: flex;
+            justify-content: space-between;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .checkout-btn {
+            width: 100%;
+            padding: 1rem;
+            background: var(--accent-orange);
+            color: var(--white);
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .checkout-btn:hover {
+            background: #ff5722;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, var(--primary-green), var(--primary-brown));
+            color: var(--white);
+            padding: 3rem 2rem 1rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+
+        .footer-section h3 {
+            margin-bottom: 1rem;
+            color: var(--accent-orange);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links a {
+            color: var(--white);
+            text-decoration: none;
+            display: block;
+            padding: 0.3rem 0;
+            transition: color 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--accent-orange);
+        }
+
+        .copyright {
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: var(--primary-green);
+                flex-direction: column;
+                padding: 1rem;
+                gap: 1rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .tagline {
+                font-size: 1.2rem;
+            }
+
+            .hero-description {
+                font-size: 1rem;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cart-sidebar {
+                width: 100%;
+                right: -100%;
+            }
+
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.6s ease-out;
+        }
+
+        /* Utility Classes */
+        .text-center {
+            text-align: center;
+        }
+
+        .mt-2 {
+            margin-top: 2rem;
+        }
+
+        .mb-2 {
+            margin-bottom: 2rem;
+        }
+
+        /* Hide elements by default for language switching */
+        [lang="ar"] {
+            display: none;
+        }
+
+        html[lang="ar"] [lang="ar"] {
+            display: block;
+        }
+
+        html[lang="ar"] [lang="en"] {
+            display: none;
+        }
+
+        html[lang="en"] [lang="en"] {
+            display: block;
+        }
+
+        html[lang="en"] [lang="ar"] {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo-container">
+                <a href="#" class="logo">
+                    <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/aa67f96d-e39e-4aca-a867-40892691fbab" alt="Mushroomed Logo" style="height: 50px; width: auto; margin-right: 10px;">
+                    <span lang="en">MUSHROOMED</span>
+                    <span lang="ar">مشرومد</span>
+                </a>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" lang="en">Home</a><a href="#home" lang="ar">الرئيسية</a></li>
+                <li><a href="#products" lang="en">Products</a><a href="#products" lang="ar">المنتجات</a></li>
+                <li><a href="#benefits" lang="en">Benefits</a><a href="#benefits" lang="ar">الفوائد</a></li>
+                <li><a href="#education" lang="en">Learn</a><a href="#education" lang="ar">تعلم</a></li>
+                <li><a href="#feed" lang="en">Animal Feed</a><a href="#feed" lang="ar">الأعلاف</a></li>
+                <li><a href="#contact" lang="en">Contact</a><a href="#contact" lang="ar">اتصل بنا</a></li>
+                <li>
+                    <button class="lang-switcher" onclick="toggleLanguage()">
+                        <span lang="en">العربية</span>
+                        <span lang="ar">English</span>
+                    </button>
+                </li>
+                <li>
+                    <div class="cart-icon" onclick="toggleCart()">
+                        <i class="fas fa-shopping-cart" style="font-size: 24px; color: white;"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </div>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-content fade-in">
+            <h1 lang="en">MUSHROOMED</h1>
+            <h1 lang="ar">مشرومد</h1>
+            <p class="tagline" lang="en">Nature's Iron Powerhouse</p>
+            <p class="tagline" lang="ar">قوة الحديد من الطبيعة</p>
+            <div class="iron-badge" lang="en"><i class="fas fa-star"></i> 33mg Iron Per Serving <i class="fas fa-star"></i></div>
+            <div class="iron-badge" lang="ar"><i class="fas fa-star"></i> ٣٣ ملجم حديد في كل حصة <i class="fas fa-star"></i></div>
+            <p class="hero-description" lang="en">
+                Premium iron-fortified oyster mushroom snacks, naturally enhanced for your health. 
+                Perfect for anemia prevention, children, athletes, and health-conscious individuals.
+            </p>
+            <p class="hero-description" lang="ar">
+                وجبات خفيفة من المشروم المحاري المعزز بالحديد، محسّن طبيعياً لصحتك.
+                مثالي للوقاية من الأنيميا، للأطفال، الرياضيين، والمهتمين بالصحة.
+            </p>
+            <div class="cta-buttons">
+                <a href="#products" class="btn btn-primary" lang="en">
+                    <i class="fas fa-shopping-cart"></i> Shop Now
+                </a>
+                <a href="#products" class="btn btn-primary" lang="ar">
+                    <i class="fas fa-shopping-cart"></i> تسوق الآن
+                </a>
+                <a href="#education" class="btn btn-secondary" lang="en">
+                    <i class="fas fa-book-open"></i> Learn More
+                </a>
+                <a href="#education" class="btn btn-secondary" lang="ar">
+                    <i class="fas fa-book-open"></i> اعرف المزيد
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section - Snacks -->
+    <section id="products">
+        <h2 class="section-title" lang="en"><i class="fas fa-leaf"></i> Our Premium Mushroom Snacks</h2>
+        <h2 class="section-title" lang="ar"><i class="fas fa-leaf"></i> وجباتنا الخفيفة المميزة من المشروم</h2>
+        <p class="section-subtitle" lang="en">
+            Crispy, delicious, and packed with 33mg of iron per serving. All-natural ingredients, zero chemicals.
+        </p>
+        <p class="section-subtitle" lang="ar">
+            مقرمشة، لذيذة، ومعبأة بـ ٣٣ ملجم من الحديد في كل حصة. مكونات طبيعية ١٠٠٪، بدون كيماويات.
+        </p>
+
+        <div class="products-grid">
+            <!-- Original Flavor -->
+            <div class="product-card fade-in">
+                <div class="product-badge" lang="en"><i class="fas fa-star"></i> BESTSELLER</div>
+                <div class="product-badge" lang="ar"><i class="fas fa-star"></i> الأكثر مبيعاً</div>
+                <div class="product-image">
+                    <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/e246bd21-028a-4a9f-9010-3f45779257bb" alt="Original Mushroom Chips" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name" lang="en">Original Mushroom Chips</h3>
+                    <h3 class="product-name" lang="ar">رقائق المشروم الأوريجينال</h3>
+                    <p class="product-description" lang="en">
+                        Classic crispy oyster mushroom chips with natural seasoning. Perfect for everyday snacking.
+                    </p>
+                    <p class="product-description" lang="ar">
+                        رقائق المشروم المحاري المقرمشة الكلاسيكية مع توابل طبيعية. مثالية للوجبات الخفيفة اليومية.
+                    </p>
+                    <div class="iron-content" lang="en"><i class="fas fa-magnet"></i> 33mg Iron | High Protein | Zero Chemicals</div>
+                    <div class="iron-content" lang="ar"><i class="fas fa-magnet"></i> ٣٣ ملجم حديد | عالي البروتين | بدون كيماويات</div>
+                    <div class="product-price">
+                        <div>
+                            <div class="price">44.99 EGP</div>
+                            <div class="weight" lang="en">40g</div>
+                            <div class="weight" lang="ar">٤٠ جم</div>
+                        </div>
+                        <div>
+                            <div class="price">79.99 EGP</div>
+                            <div class="weight" lang="en">60g</div>
+                            <div class="weight" lang="ar">٦٠ جم</div>
+                        </div>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Original Mushroom Chips', 44.99)" lang="en">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                    <button class="add-to-cart" onclick="addToCart('رقائق المشروم الأوريجينال', 44.99)" lang="ar">
+                        <i class="fas fa-cart-plus"></i> أضف للسلة
+                    </button>
+                </div>
+            </div>
+
+            <!-- Spicy Flavor -->
+            <div class="product-card fade-in">
+                <div class="product-badge" lang="en"><i class="fas fa-fire"></i> SPICY</div>
+                <div class="product-badge" lang="ar"><i class="fas fa-fire"></i> حار</div>
+                <div class="product-image">
+                    <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/6de49b86-f697-4e58-bc7a-2eee6511cecf" alt="Spicy Pepper Chips" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name" lang="en">Spicy Pepper Chips</h3>
+                    <h3 class="product-name" lang="ar">رقائق الفلفل الحار</h3>
+                    <p class="product-description" lang="en">
+                        Bold and spicy with natural hot pepper. For those who love a kick in their snack!
+                    </p>
+                    <p class="product-description" lang="ar">
+                        جريئة وحارة مع فلفل طبيعي حار. لمحبي الطعم القوي في وجباتهم الخفيفة!
+                    </p>
+                    <div class="iron-content" lang="en"><i class="fas fa-magnet"></i> 33mg Iron | Metabolism Boost | All Natural</div>
+                    <div class="iron-content" lang="ar"><i class="fas fa-magnet"></i> ٣٣ ملجم حديد | تعزيز الأيض | طبيعي ١٠٠٪</div>
+                    <div class="product-price">
+                        <div>
+                            <div class="price">44.99 EGP</div>
+                            <div class="weight" lang="en">40g</div>
+                            <div class="weight" lang="ar">٤٠ جم</div>
+                        </div>
+                        <div>
+                            <div class="price">79.99 EGP</div>
+                            <div class="weight" lang="en">60g</div>
+                            <div class="weight" lang="ar">٦٠ جم</div>
+                        </div>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Spicy Pepper Chips', 44.99)" lang="en">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                    <button class="add-to-cart" onclick="addToCart('رقائق الفلفل الحار', 44.99)" lang="ar">
+                        <i class="fas fa-cart-plus"></i> أضف للسلة
+                    </button>
+                </div>
+            </div>
+
+            <!-- Herbs & Spices Flavor -->
+            <div class="product-card fade-in">
+                <div class="product-badge" lang="en"><i class="fas fa-seedling"></i> HERBS</div>
+                <div class="product-badge" lang="ar"><i class="fas fa-seedling"></i> أعشاب</div>
+                <div class="product-image">
+                    <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/a909e693-4273-426a-adf3-f50d7e37ee6a" alt="Herbs & Spices Chips" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name" lang="en">Herbs &amp; Spices Chips</h3>
+                    <h3 class="product-name" lang="ar">رقائق التوابل والأعشاب</h3>
+                    <p class="product-description" lang="en">
+                        Aromatic blend of natural herbs and spices. Mediterranean-inspired flavor profile.
+                    </p>
+                    <p class="product-description" lang="ar">
+                        مزيج عطري من الأعشاب والتوابل الطبيعية. نكهة مستوحاة من البحر المتوسط.
+                    </p>
+                    <div class="iron-content" lang="en"><i class="fas fa-magnet"></i> 33mg Iron | Antioxidant Rich | Gourmet Taste</div>
+                    <div class="iron-content" lang="ar"><i class="fas fa-magnet"></i> ٣٣ ملجم حديد | غني بمضادات الأكسدة | طعم فاخر</div>
+                    <div class="product-price">
+                        <div>
+                            <div class="price">44.99 EGP</div>
+                            <div class="weight" lang="en">40g</div>
+                            <div class="weight" lang="ar">٤٠ جم</div>
+                        </div>
+                        <div>
+                            <div class="price">79.99 EGP</div>
+                            <div class="weight" lang="en">60g</div>
+                            <div class="weight" lang="ar">٦٠ جم</div>
+                        </div>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Herbs & Spices Chips', 44.99)" lang="en">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                    <button class="add-to-cart" onclick="addToCart('رقائق التوابل والأعشاب', 44.99)" lang="ar">
+                        <i class="fas fa-cart-plus"></i> أضف للسلة
+                    </button>
+                </div>
+            </div>
+
+            <!-- Tomato Flavor -->
+            <div class="product-card fade-in">
+                <div class="product-badge" lang="en"><i class="fas fa-lemon"></i> VITAMIN C</div>
+                <div class="product-badge" lang="ar"><i class="fas fa-lemon"></i> فيتامين سي</div>
+                <div class="product-image">
+                    <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/4e636ae4-2ff7-468b-ba3c-cb3649633426" alt="Tomato Flavor Chips" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name" lang="en">Tomato Flavor Chips</h3>
+                    <h3 class="product-name" lang="ar">رقائق بطعم الطماطم</h3>
+                    <p class="product-description" lang="en">
+                        Tangy tomato taste with added Vitamin C for enhanced iron absorption. Double the benefits!
+                    </p>
+                    <p class="product-description" lang="ar">
+                        طعم الطماطم الحمضي مع فيتامين سي لتحسين امتصاص الحديد. فوائد مضاعفة!
+                    </p>
+                    <div class="iron-content" lang="en"><i class="fas fa-magnet"></i> 33mg Iron + Vitamin C | Maximum Absorption</div>
+                    <div class="iron-content" lang="ar"><i class="fas fa-magnet"></i> ٣٣ ملجم حديد + فيتامين سي | أقصى امتصاص</div>
+                    <div class="product-price">
+                        <div>
+                            <div class="price">44.99 EGP</div>
+                            <div class="weight" lang="en">40g</div>
+                            <div class="weight" lang="ar">٤٠ جم</div>
+                        </div>
+                        <div>
+                            <div class="price">79.99 EGP</div>
+                            <div class="weight" lang="en">60g</div>
+                            <div class="weight" lang="ar">٦٠ جم</div>
+                        </div>
+                    </div>
+                    <button class="add-to-cart" onclick="addToCart('Tomato Flavor Chips', 44.99)" lang="en">
+                        <i class="fas fa-cart-plus"></i> Add to Cart
+                    </button>
+                    <button class="add-to-cart" onclick="addToCart('رقائق بطعم الطماطم', 44.99)" lang="ar">
+                        <i class="fas fa-cart-plus"></i> أضف للسلة
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Other Mushroom Products -->
+        <h3 class="section-title" style="font-size: 2rem; margin-top: 3rem;" lang="en">
+            <i class="fas fa-leaf"></i> Other Premium Products
+        </h3>
+        <h3 class="section-title" style="font-size: 2rem; margin-top: 3rem;" lang="ar">
+            <i class="fas fa-leaf"></i> منتجات مميزة أخرى
+        </h3>
+
+        <div class="products-grid">
+            <!-- Fresh Mushrooms -->
+            <div class="product-card fade-in">
+                <div class="product-image">
+                    <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/c44c69bb-f8b9-42e4-8917-2e03f83f06e7" alt="Fresh Mushrooms" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name" lang="en">Fresh Iron-Fortified Mushrooms</h3>
+                    <h3 class="product-name" lang="ar">مشروم طازج معزز بالحديد</h3>
+                    <p class="product-description" lang="en">Fresh oyster mushrooms, naturally grown with iron fortification.</p>
+                    <p class="product-description" lang="ar">مشروم محاري طازج، منمّى بشكل طبيعي مع تعزيز بالحديد.</p>
+                    <div class="price">Contact for Pricing</div>
+                    <button class="add-to-cart" onclick="scrollToContact()" lang="en">Request Quote</button>
+                    <button class="add-to-cart" onclick="scrollToContact()" lang="ar">اطلب عرض سعر</button>
+                </div>
+            </div>
+
+            <!-- Mushroom Powder -->
+            <div class="product-card fade-in">
+                <div class="product-image">
+                    <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/8ffeffbf-b050-4d19-91a1-1f28e74547be" alt="Mushroom Powder" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name" lang="en">Iron-Rich Mushroom Powder</h3>
+                    <h3 class="product-name" lang="ar">باودر المشروم الغني بالحديد</h3>
+                    <p class="product-description" lang="en">Pure mushroom powder for cooking, baking, and smoothies.</p>
+                    <p class="product-description" lang="ar">باودر مشروم نقي للطبخ، الخبز، والمشروبات.</p>
+                    <div class="price">Contact for Pricing</div>
+                    <button class="add-to-cart" onclick="scrollToContact()" lang="en">Request Quote</button>
+                    <button class="add-to-cart" onclick="scrollToContact()" lang="ar">اطلب عرض سعر</button>
+                </div>
+            </div>
+
+            <!-- Canned Mushrooms -->
+            <div class="product-card fade-in">
+                <div class="product-image">
+                    <img src="https://agi-prod-file-upload-public-main-use1.s3.amazonaws.com/6e6d8756-a0af-41be-b523-5b9b30f20766" alt="Canned Mushrooms" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name" lang="en">Canned Iron-Fortified Mushrooms</h3>
+                    <h3 class="product-name" lang="ar">علب مشروم معززة بالحديد</h3>
+                    <p class="product-description" lang="en">Ready-to-use canned mushrooms for quick recipes.</p>
+                    <p class="product-description" lang="ar">علب مشروم جاهزة للاستخدام في وصفات سريعة.</p>
+                    <div class="price">Contact for Pricing</div>
+                    <button class="add-to-cart" onclick="scrollToContact()" lang="en">Request Quote</button>
+                    <button class="add-to-cart" onclick="scrollToContact()" lang="ar">اطلب عرض سعر</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Special Offer -->
+        <div style="background: linear-gradient(135deg, var(--accent-orange), var(--accent-red)); color: white; padding: 2rem; border-radius: 20px; text-align: center; margin-top: 3rem;">
+            <h3 style="font-size: 2rem; margin-bottom: 1rem;" lang="en"><i class="fas fa-gift"></i> Special Offer: Buy 3, Get 1 FREE!</h3>
+            <h3 style="font-size: 2rem; margin-bottom: 1rem;" lang="ar"><i class="fas fa-gift"></i> عرض خاص: اشتري ٣، احصل على ١ مجاناً!</h3>
+            <p style="font-size: 1.2rem;" lang="en">Mix and match any flavors. Limited time only!</p>
+            <p style="font-size: 1.2rem;" lang="ar">اخلط وطابق أي نكهات. لفترة محدودة فقط!</p>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="benefits" style="background: linear-gradient(135deg, var(--cream), var(--white));">
+        <h2 class="section-title" lang="en"><i class="fas fa-heart"></i> Why Choose Mushroomed?</h2>
+        <h2 class="section-title" lang="ar"><i class="fas fa-heart"></i> لماذا تختار مشرومد؟</h2>
+
+        <div class="benefits-grid">
+            <div class="benefit-card fade-in">
+                <div class="benefit-icon"><i class="fas fa-heartbeat" style="color: var(--accent-red);"></i></div>
+                <h3 class="benefit-title" lang="en">Fights Anemia</h3>
+                <h3 class="benefit-title" lang="ar">يحارب الأنيميا</h3>
+                <p class="benefit-text" lang="en">
+                    33mg of bioavailable iron per serving helps prevent and treat iron-deficiency anemia effectively.
+                </p>
+                <p class="benefit-text" lang="ar">
+                    ٣٣ ملجم من الحديد القابل للامتصاص في كل حصة يساعد في الوقاية من الأنيميا وعلاجها بفعالية.
+                </p>
+            </div>
+
+            <div class="benefit-card fade-in">
+                <div class="benefit-icon"><i class="fas fa-baby" style="color: var(--accent-orange);"></i></div>
+                <h3 class="benefit-title" lang="en">Perfect for Children</h3>
+                <h3 class="benefit-title" lang="ar">مثالي للأطفال</h3>
+                <p class="benefit-text" lang="en">
+                    Tasty snack that kids love, providing essential iron for healthy growth and development.
+                </p>
+                <p class="benefit-text" lang="ar">
+                    وجبة خفيفة لذيذة يحبها الأطفال، توفر الحديد الضروري للنمو والتطور الصحي.
+                </p>
+            </div>
+
+            <div class="benefit-card fade-in">
+                <div class="benefit-icon"><i class="fas fa-running" style="color: var(--primary-green);"></i></div>
+                <h3 class="benefit-title" lang="en">Athletes' Choice</h3>
+                <h3 class="benefit-title" lang="ar">خيار الرياضيين</h3>
+                <p class="benefit-text" lang="en">
+                    High protein and iron content supports muscle recovery and endurance performance.
+                </p>
+                <p class="benefit-text" lang="ar">
+                    محتوى عالي من البروتين والحديد يدعم استشفاء العضلات وأداء التحمل.
+                </p>
+            </div>
+
+            <div class="benefit-card fade-in">
+                <div class="benefit-icon"><i class="fas fa-leaf" style="color: var(--success);"></i></div>
+                <h3 class="benefit-title" lang="en">Vegan & Vegetarian</h3>
+                <h3 class="benefit-title" lang="ar">نباتي ١٠٠٪</h3>
+                <p class="benefit-text" lang="en">
+                    Plant-based iron source ideal for vegetarians and vegans seeking complete nutrition.
+                </p>
+                <p class="benefit-text" lang="ar">
+                    مصدر حديد نباتي مثالي للنباتيين الباحثين عن تغذية متكاملة.
+                </p>
+            </div>
+
+            <div class="benefit-card fade-in">
+                <div class="benefit-icon"><i class="fas fa-ban" style="color: var(--accent-red);"></i></div>
+                <h3 class="benefit-title" lang="en">Zero Chemicals</h3>
+                <h3 class="benefit-title" lang="ar">بدون كيماويات</h3>
+                <p class="benefit-text" lang="en">
+                    100% natural ingredients with no artificial additives, preservatives, or chemicals.
+                </p>
+                <p class="benefit-text" lang="ar">
+                    مكونات طبيعية ١٠٠٪ بدون إضافات صناعية أو مواد حافظة أو كيماويات.
+                </p>
+            </div>
+
+            <div class="benefit-card fade-in">
+                <div class="benefit-icon"><i class="fas fa-flask" style="color: var(--primary-brown);"></i></div>
+                <h3 class="benefit-title" lang="en">Scientifically Enhanced</h3>
+                <h3 class="benefit-title" lang="ar">معزز علمياً</h3>
+                <p class="benefit-text" lang="en">
+                    Grown using proprietary biofortification methods for maximum iron content.
+                </p>
+                <p class="benefit-text" lang="ar">
+                    منمّى بطرق التعزيز الحيوي الخاصة لأقصى محتوى من الحديد.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Educational Section -->
+    <section id="education">
+        <h2 class="section-title" lang="en"><i class="fas fa-graduation-cap"></i> Health Education Center</h2>
+        <h2 class="section-title" lang="ar"><i class="fas fa-graduation-cap"></i> مركز التوعية الصحية</h2>
+        <p class="section-subtitle" lang="en">
+            Learn about the incredible health benefits of iron-fortified mushrooms
+        </p>
+        <p class="section-subtitle" lang="ar">
+            تعرف على الفوائد الصحية المذهلة للمشروم المعزز بالحديد
+        </p>
+
+        <div class="education-cards">
+            <!-- Anemia Card -->
+            <div class="education-card fade-in">
+                <h3 lang="en"><i class="fas fa-tint" style="color: var(--accent-red);"></i> Iron & Anemia Prevention</h3>
+                <h3 lang="ar"><i class="fas fa-tint" style="color: var(--accent-red);"></i> الحديد والوقاية من الأنيميا</h3>
+                <p lang="en">
+                    <strong>Iron deficiency anemia</strong> affects over 1.6 billion people worldwide. Our mushrooms provide:
+                </p>
+                <p lang="ar">
+                    <strong>أنيميا نقص الحديد</strong> تؤثر على أكثر من ١.٦ مليار شخص عالمياً. مشرومنا يوفر:
+                </p>
+                <ul>
+                    <li lang="en">33mg iron per serving (183% daily value)</li>
+                    <li lang="ar">٣٣ ملجم حديد لكل حصة (١٨٣٪ من القيمة اليومية)</li>
+                    <li lang="en">Enhanced bioavailability for better absorption</li>
+                    <li lang="ar">قابلية امتصاص محسّنة لامتصاص أفضل</li>
+                    <li lang="en">Vitamin C in tomato flavor boosts iron absorption</li>
+                    <li lang="ar">فيتامين سي في نكهة الطماطم يعزز امتصاص الحديد</li>
+                    <li lang="en">Suitable for daily consumption</li>
+                    <li lang="ar">مناسب للاستهلاك اليومي</li>
+                </ul>
+                <p lang="en" style="margin-top: 1rem; font-size: 0.9rem; color: var(--light-text);">
+                    <em>Source: WHO, National Institutes of Health (NIH)</em>
+                </p>
+                <p lang="ar" style="margin-top: 1rem; font-size: 0.9rem; color: var(--light-text);">
+                    <em>المصدر: منظمة الصحة العالمية، المعاهد الوطنية للصحة</em>
+                </p>
+            </div>
+
+            <!-- Children Card -->
+            <div class="education-card fade-in">
+                <h3 lang="en"><i class="fas fa-child" style="color: var(--accent-orange);"></i> Essential for Children's Growth</h3>
+                <h3 lang="ar"><i class="fas fa-child" style="color: var(--accent-orange);"></i> ضروري لنمو الأطفال</h3>
+                <p lang="en">
+                    <strong>Growing children</strong> need adequate iron for cognitive and physical development:
+                </p>
+                <p lang="ar">
+                    <strong>الأطفال في مرحلة النمو</strong> يحتاجون حديد كافي للتطور المعرفي والجسدي:
+                </p>
+                <ul>
+                    <li lang="en">Supports brain development and learning</li>
+                    <li lang="ar">يدعم تطور الدماغ والتعلم</li>
+                    <li lang="en">Prevents iron deficiency in picky eaters</li>
+                    <li lang="ar">يمنع نقص الحديد عند الأطفال الصعبين في الطعام</li>
+                    <li lang="en">Delicious taste kids enjoy</li>
+                    <li lang="ar">طعم لذيذ يحبه الأطفال</li>
+                    <li lang="en">High protein for growth spurts</li>
+                    <li lang="ar">بروتين عالي لفترات النمو السريع</li>
+                    <li lang="en">Healthy alternative to junk food</li>
+                    <li lang="ar">بديل صحي للوجبات السريعة</li>
+                </ul>
+                <p lang="en" style="margin-top: 1rem; font-size: 0.9rem; color: var(--light-text);">
+                    <em>Children 4-8 years need 10mg iron daily</em>
+                </p>
+                <p lang="ar" style="margin-top: 1rem; font-size: 0.9rem; color: var(--light-text);">
+                    <em>الأطفال من ٤-٨ سنوات يحتاجون ١٠ ملجم حديد يومياً</em>
+                </p>
+            </div>
+
+            <!-- Athletes Card -->
+            <div class="education-card fade-in">
+                <h3 lang="en"><i class="fas fa-dumbbell" style="color: var(--primary-green);"></i> Performance Fuel for Athletes</h3>
+                <h3 lang="ar"><i class="fas fa-dumbbell" style="color: var(--primary-green);"></i> وقود الأداء للرياضيين</h3>
+                <p lang="en">
+                    <strong>Athletes</strong> lose iron through sweat and need extra for peak performance:
+                </p>
+                <p lang="ar">
+                    <strong>الرياضيون</strong> يفقدون الحديد عبر العرق ويحتاجون المزيد للأداء الأمثل:
+                </p>
+                <ul>
+                    <li lang="en">Enhances oxygen delivery to muscles</li>
+                    <li lang="ar">يعزز إيصال الأكسجين للعضلات</li>
+                    <li lang="en">Improves endurance and stamina</li>
+                    <li lang="ar">يحسن التحمل والقدرة على الاستمرار</li>
+                    <li lang="en">Supports faster recovery</li>
+                    <li lang="ar">يدعم الاستشفاء الأسرع</li>
+                    <li lang="en">High protein (23-33g per 100g)</li>
+                    <li lang="ar">بروتين عالي (٢٣-٣٣ جم لكل ١٠٠ جم)</li>
+                    <li lang="en">Low calorie, nutrient-dense snack</li>
+                    <li lang="ar">وجبة خفيفة منخفضة السعرات، كثيفة العناصر الغذائية</li>
+                </ul>
+                <p lang="en" style="margin-top: 1rem; font-size: 0.9rem; color: var(--light-text);">
+                    <em>Research: Oyster mushrooms enhance athletic performance</em>
+                </p>
+                <p lang="ar" style="margin-top: 1rem; font-size: 0.9rem; color: var(--light-text);">
+                    <em>أبحاث: المشروم المحاري يعزز الأداء الرياضي</em>
+                </p>
+            </div>
+
+            <!-- Vegetarians Card -->
+            <div class="education-card fade-in">
+                <h3 lang="en"><i class="fas fa-seedling" style="color: var(--success);"></i> Plant-Based Iron Source</h3>
+                <h3 lang="ar"><i class="fas fa-seedling" style="color: var(--success);"></i> مصدر حديد نباتي</h3>
+                <p lang="en">
+                    <strong>Vegetarians & Vegans</strong> often struggle with iron intake. Mushroomed solves this:
+                </p>
+                <p lang="ar">
+                    <strong>النباتيون</strong> غالباً يعانون من نقص الحديد. مشرومد يحل هذه المشكلة:
+                </p>
+                <ul>
+                    <li lang="en">Plant-based, 100% vegan-friendly</li>
+                    <li lang="ar">نباتي ١٠٠٪، مناسب للنباتيين الصارمين</li>
+                    <li lang="en">Higher bioavailability than plant iron sources</li>
+                    <li lang="ar">قابلية امتصاص أعلى من مصادر الحديد النباتية</li>
+                    <li lang="en">Complete protein with all essential amino acids</li>
+                    <li lang="ar">بروتين كامل يحتوي جميع الأحماض الأمينية الأساسية</li>
+                    <li lang="en">Rich in B vitamins (especially B5 & niacin)</li>
+                    <li lang="ar">غني بفيتامينات B (خاصة B5 والنياسين)</li>
+                    <li lang="en">Sustainable, eco-friendly production</li>
+                    <li lang="ar">إنتاج مستدام، صديق للبيئة</li>
+                </ul>
+                <p lang="en" style="margin-top: 1rem; font-size: 0.9rem; color: var(--light-text);">
+                    <em>Vegans need 1.8x more iron due to lower absorption</em>
+                </p>
+                <p lang="ar" style="margin-top: 1rem; font-size: 0.9rem; color: var(--light-text);">
+                    <em>النباتيون الصارمون يحتاجون ١.٨ ضعف الحديد بسبب انخفاض الامتصاص</em>
+                </p>
+            </div>
+        </div>
+
+        <!-- Scientific Data -->
+        <div style="background: var(--white); padding: 2rem; border-radius: 20px; margin-top: 3rem; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+            <h3 style="color: var(--primary-green); text-align: center; margin-bottom: 2rem; font-size: 1.8rem;" lang="en">
+                <i class="fas fa-microscope"></i> Nutritional Facts per 100g Oyster Mushrooms
+            </h3>
+            <h3 style="color: var(--primary-green); text-align: center; margin-bottom: 2rem; font-size: 1.8rem;" lang="ar">
+                <i class="fas fa-microscope"></i> القيم الغذائية لكل ١٠٠ جم من المشروم المحاري
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+                <div style="text-align: center; padding: 1rem; background: var(--cream); border-radius: 10px;">
+                    <div style="font-size: 2rem; font-weight: bold; color: var(--accent-orange);">28 kcal</div>
+                    <div lang="en">Calories</div>
+                    <div lang="ar">سعرات حرارية</div>
+                </div>
+                <div style="text-align: center; padding: 1rem; background: var(--cream); border-radius: 10px;">
+                    <div style="font-size: 2rem; font-weight: bold; color: var(--accent-orange);">23-33g</div>
+                    <div lang="en">Protein</div>
+                    <div lang="ar">بروتين</div>
+                </div>
+                <div style="text-align: center; padding: 1rem; background: var(--cream); border-radius: 10px;">
+                    <div style="font-size: 2rem; font-weight: bold; color: var(--accent-orange);">9.66mg</div>
+                    <div lang="en">Iron (Natural)</div>
+                    <div lang="ar">حديد (طبيعي)</div>
+                </div>
+                <div style="text-align: center; padding: 1rem; background: var(--cream); border-radius: 10px;">
+                    <div style="font-size: 2rem; font-weight: bold; color: var(--accent-orange);">33mg</div>
+                    <div lang="en">Iron (Fortified)</div>
+                    <div lang="ar">حديد (معزز)</div>
+                </div>
+                <div style="text-align: center; padding: 1rem; background: var(--cream); border-radius: 10px;">
+                    <div style="font-size: 2rem; font-weight: bold; color: var(--accent-orange);">42-52g</div>
+                    <div lang="en">Fiber</div>
+                    <div lang="ar">ألياف</div>
+                </div>
+                <div style="text-align: center; padding: 1rem; background: var(--cream); border-radius: 10px;">
+                    <div style="font-size: 2rem; font-weight: bold; color: var(--accent-orange);">27%</div>
+                    <div lang="en">Niacin (B3)</div>
+                    <div lang="ar">نياسين (B3)</div>
+                </div>
+            </div>
+            <p style="text-align: center; margin-top: 2rem; color: var(--light-text);" lang="en">
+                <em>Sources: USDA, Research studies on Pleurotus ostreatus nutritional content</em>
+            </p>
+            <p style="text-align: center; margin-top: 2rem; color: var(--light-text);" lang="ar">
+                <em>المصادر: وزارة الزراعة الأمريكية، دراسات بحثية عن المحتوى الغذائي للمشروم المحاري</em>
+            </p>
+        </div>
+
+        <!-- Video Section -->
+        <h3 style="text-align: center; font-size: 2rem; margin-top: 4rem; margin-bottom: 2rem; color: var(--primary-green);" lang="en">
+            <i class="fas fa-video"></i> How We Grow Our Mushrooms
+        </h3>
+        <h3 style="text-align: center; font-size: 2rem; margin-top: 4rem; margin-bottom: 2rem; color: var(--primary-green);" lang="ar">
+            <i class="fas fa-video"></i> كيف ننمي مشرومنا
+        </h3>
+        <div class="video-grid">
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/45wWB4p3W7Q" allowfullscreen title="Oyster Mushroom Farming"></iframe>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/ZAwit86xlJ0" allowfullscreen title="Inside the Mushroom Farm"></iframe>
+            </div>
+            <div class="video-card">
+                <iframe src="https://www.youtube.com/embed/1By6u5rDfp4" allowfullscreen title="Mushroom Cultivation"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animal Feed Section -->
+    <section id="feed" style="background: linear-gradient(135deg, #f5f1e8, var(--cream));">
+        <h2 class="section-title" lang="en"><i class="fas fa-wheat-awn"></i> Premium Animal Feed Solutions</h2>
+        <h2 class="section-title" lang="ar"><i class="fas fa-wheat-awn"></i> حلول أعلاف حيوانية مميزة</h2>
+        <p class="section-subtitle" lang="en">
+            Spent mushroom substrate: High-protein, iron-rich feed for ruminants
+        </p>
+        <p class="section-subtitle" lang="ar">
+            مخلفات تنمية المشروم: علف عالي البروتين غني بالحديد للمجترات
+        </p>
+
+        <div class="feed-products">
+            <div class="feed-card fade-in">
+                <h3 lang="en"><i class="fas fa-cow"></i> 10kg Bag</h3>
+                <h3 lang="ar"><i class="fas fa-cow"></i> كيس ١٠ كيلو</h3>
+                <div style="font-size: 2.5rem; font-weight: bold; margin: 1rem 0;">250 EGP</div>
+                <p lang="en" style="text-decoration: line-through; opacity: 0.7;">Regular: 300 EGP</p>
+                <p lang="ar" style="text-decoration: line-through; opacity: 0.7;">السعر العادي: ٣٠٠ جنيه</p>
+                <div style="background: var(--accent-red); color: white; padding: 0.5rem; border-radius: 10px; margin: 1rem 0; font-weight: bold;">
+                    <span lang="en"><i class="fas fa-fire"></i> SAVE 50 EGP!</span>
+                    <span lang="ar"><i class="fas fa-fire"></i> وفر ٥٠ جنيه!</span>
+                </div>
+                <ul class="feed-features">
+                    <li lang="en">Enhanced protein content (higher than raw straw)</li>
+                    <li lang="ar">محتوى بروتين معزز (أعلى من التبن الخام)</li>
+                    <li lang="en">Rich in iron and minerals</li>
+                    <li lang="ar">غني بالحديد والمعادن</li>
+                    <li lang="en">High digestible fiber</li>
+                    <li lang="ar">ألياف عالية القابلية للهضم</li>
+                    <li lang="en">Improves milk production</li>
+                    <li lang="ar">يحسن إنتاج الحليب</li>
+                </ul>
+                <button class="add-to-cart" onclick="addToCart('Animal Feed 10kg', 250)" style="background: white; color: var(--primary-brown);" lang="en">
+                    <i class="fas fa-shopping-bag"></i> Order Now
+                </button>
+                <button class="add-to-cart" onclick="addToCart('علف حيواني ١٠ كجم', 250)" style="background: white; color: var(--primary-brown);" lang="ar">
+                    <i class="fas fa-shopping-bag"></i> اطلب الآن
+                </button>
+            </div>
+
+            <div class="feed-card fade-in">
+                <h3 lang="en"><i class="fas fa-horse"></i> 25kg Bag - BEST VALUE</h3>
+                <h3 lang="ar"><i class="fas fa-horse"></i> كيس ٢٥ كيلو - أفضل قيمة</h3>
+                <div style="font-size: 2.5rem; font-weight: bold; margin: 1rem 0;">550 EGP</div>
+                <p lang="en" style="text-decoration: line-through; opacity: 0.7;">Regular: 750 EGP</p>
+                <p lang="ar" style="text-decoration: line-through; opacity: 0.7;">السعر العادي: ٧٥٠ جنيه</p>
+                <div style="background: var(--accent-red); color: white; padding: 0.5rem; border-radius: 10px; margin: 1rem 0; font-weight: bold;">
+                    <span lang="en"><i class="fas fa-fire"></i> SAVE 200 EGP!</span>
+                    <span lang="ar"><i class="fas fa-fire"></i> وفر ٢٠٠ جنيه!</span>
+                </div>
+                <ul class="feed-features">
+                    <li lang="en">Bulk savings for farms</li>
+                    <li lang="ar">توفير بالجملة للمزارع</li>
+                    <li lang="en">Superior to traditional straws</li>
+                    <li lang="ar">متفوق على الأتبان التقليدية</li>
+                    <li lang="en">Boosts animal health</li>
+                    <li lang="ar">يعزز صحة الحيوانات</li>
+                    <li lang="en">Suitable for cattle, buffalo, goats, sheep</li>
+                    <li lang="ar">مناسب للأبقار، الجاموس، الماعز، الأغنام</li>
+                </ul>
+                <button class="add-to-cart" onclick="addToCart('Animal Feed 25kg', 550)" style="background: white; color: var(--primary-brown);" lang="en">
+                    <i class="fas fa-shopping-bag"></i> Order Now
+                </button>
+                <button class="add-to-cart" onclick="addToCart('علف حيواني ٢٥ كجم', 550)" style="background: white; color: var(--primary-brown);" lang="ar">
+                    <i class="fas fa-shopping-bag"></i> اطلب الآن
+                </button>
+            </div>
+        </div>
+
+        <div style="background: white; padding: 2rem; border-radius: 20px; margin-top: 2rem; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+            <h3 style="color: var(--primary-green); margin-bottom: 1rem;" lang="en">
+                <i class="fas fa-certificate"></i> Why Our Spent Substrate is Superior
+            </h3>
+            <h3 style="color: var(--primary-green); margin-bottom: 1rem;" lang="ar">
+                <i class="fas fa-certificate"></i> لماذا مخلفات تنميتنا متفوقة
+            </h3>
+            <p lang="en">
+                After oyster mushroom cultivation, the spent substrate becomes a nutrient-rich feed supplement. 
+                Research shows that oyster mushroom bioprocessing significantly enhances feed quality:
+            </p>
+            <p lang="ar">
+                بعد تنمية المشروم المحاري، تصبح مخلفات التنمية مكمل غذائي غني بالعناصر. 
+                تظهر الأبحاث أن المعالجة الحيوية بالمشروم المحاري تحسن جودة العلف بشكل كبير:
+            </p>
+            <ul style="list-style: none; padding: 1rem 0;">
+                <li style="padding: 0.5rem 0;" lang="en">✓ Reduces fiber content (easier digestion)</li>
+                <li style="padding: 0.5rem 0;" lang="ar">✓ يقلل محتوى الألياف (هضم أسهل)</li>
+                <li style="padding: 0.5rem 0;" lang="en">✓ Increases crude protein content</li>
+                <li style="padding: 0.5rem 0;" lang="ar">✓ يزيد محتوى البروتين الخام</li>
+                <li style="padding: 0.5rem 0;" lang="en">✓ Enhances ruminal fermentation efficiency</li>
+                <li style="padding: 0.5rem 0;" lang="ar">✓ يعزز كفاءة التخمر الكرشي</li>
+                <li style="padding: 0.5rem 0;" lang="en">✓ Improves organic matter degradability</li>
+                <li style="padding: 0.5rem 0;" lang="ar">✓ يحسن قابلية تحلل المادة العضوية</li>
+            </ul>
+            <p style="font-style: italic; color: var(--light-text); margin-top: 1rem;" lang="en">
+                Source: South African Journal of Animal Science, 2024
+            </p>
+            <p style="font-style: italic; color: var(--light-text); margin-top: 1rem;" lang="ar">
+                المصدر: المجلة الجنوب أفريقية لعلوم الحيوان، ٢٠٢٤
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq">
+        <h2 class="section-title" lang="en"><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+        <h2 class="section-title" lang="ar"><i class="fas fa-question-circle"></i> أسئلة شائعة</h2>
+
+        <div class="faq-container">
+            <div class="faq-item fade-in">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span lang="en">How much iron is in each serving?</span>
+                    <span lang="ar">كم كمية الحديد في كل حصة؟</span>
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p lang="en">
+                        Each serving contains 33mg of bioavailable iron, which is approximately 183% of the recommended daily value. 
+                        This is significantly higher than most plant-based iron sources.
+                    </p>
+                    <p lang="ar">
+                        كل حصة تحتوي على ٣٣ ملجم من الحديد القابل للامتصاص، وهو ما يقارب ١٨٣٪ من القيمة اليومية الموصى بها.
+                        هذا أعلى بكثير من معظم مصادر الحديد النباتية.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span lang="en">Are there any chemicals or preservatives?</span>
+                    <span lang="ar">هل توجد أي كيماويات أو مواد حافظة؟</span>
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p lang="en">
+                        Absolutely not! All our products are 100% natural with zero chemicals, artificial additives, or preservatives. 
+                        We use only natural flavors extracted from herbs, spices, and vegetables.
+                    </p>
+                    <p lang="ar">
+                        بالتأكيد لا! جميع منتجاتنا طبيعية ١٠٠٪ بدون كيماويات أو إضافات صناعية أو مواد حافظة.
+                        نستخدم فقط نكهات طبيعية مستخلصة من الأعشاب والتوابل والخضروات.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span lang="en">How do you fortify mushrooms with iron?</span>
+                    <span lang="ar">كيف تعززون المشروم بالحديد؟</span>
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p lang="en">
+                        We use a proprietary biofortification method during the mushroom growing process. 
+                        The mushrooms naturally absorb and concentrate iron from the enriched growing medium, 
+                        making it highly bioavailable compared to synthetic supplements.
+                    </p>
+                    <p lang="ar">
+                        نستخدم طريقة تعزيز حيوي خاصة أثناء عملية تنمية المشروم.
+                        يمتص المشروم الحديد بشكل طبيعي من الوسط المغذي المعزز،
+                        مما يجعله قابلاً للامتصاص بشكل عالي مقارنة بالمكملات الصناعية.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span lang="en">Can children safely consume these snacks?</span>
+                    <span lang="ar">هل يمكن للأطفال تناول هذه الوجبات بأمان؟</span>
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p lang="en">
+                        Yes! Our snacks are perfectly safe for children. In fact, they're an excellent way to address 
+                        iron deficiency in kids who may be picky eaters. However, we recommend consulting with a 
+                        pediatrician for children under 3 years old.
+                    </p>
+                    <p lang="ar">
+                        نعم! وجباتنا الخفيفة آمنة تماماً للأطفال. في الواقع، هي طريقة ممتازة لمعالجة
+                        نقص الحديد عند الأطفال الصعبين في الطعام. ومع ذلك، نوصي باستشارة طبيب أطفال
+                        للأطفال دون سن ٣ سنوات.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span lang="en">What is the shelf life?</span>
+                    <span lang="ar">ما هي مدة الصلاحية؟</span>
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p lang="en">
+                        Our snacks have a 6-month shelf life when stored in a cool, dry place. 
+                        Once opened, we recommend consuming within 2 weeks for optimal freshness and crispiness.
+                    </p>
+                    <p lang="ar">
+                        وجباتنا الخفيفة لها صلاحية ٦ أشهر عند حفظها في مكان بارد وجاف.
+                        بعد الفتح، نوصي بالاستهلاك خلال أسبوعين للحصول على أفضل نضارة وقرمشة.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item fade-in">
+                <div class="faq-question" onclick="toggleFAQ(this)">
+                    <span lang="en">Do you ship nationwide?</span>
+                    <span lang="ar">هل تشحنون لكافة أنحاء مصر؟</span>
+                    <span>▼</span>
+                </div>
+                <div class="faq-answer">
+                    <p lang="en">
+                        Yes! We ship to all regions across Egypt. Shipping costs range from 45-60 EGP depending on location. 
+                        Orders are typically delivered within 3-5 business days.
+                    </p>
+                    <p lang="ar">
+                        نعم! نشحن لجميع المناطق في مصر. تكلفة الشحن تتراوح من ٤٥-٦٠ جنيه حسب الموقع.
+                        الطلبات عادة تصل خلال ٣-٥ أيام عمل.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="background: linear-gradient(135deg, var(--cream), var(--white));">
+        <h2 class="section-title" lang="en"><i class="fas fa-phone-alt"></i> Get In Touch</h2>
+        <h2 class="section-title" lang="ar"><i class="fas fa-phone-alt"></i> تواصل معنا</h2>
+
+        <div class="contact-grid">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fab fa-whatsapp" style="font-size: 2rem; color: #25D366;"></i></div>
+                    <div>
+                        <h3 lang="en">WhatsApp & Phone</h3>
+                        <h3 lang="ar">واتساب وهاتف</h3>
+                        <p>+20 127 339 0881</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-envelope" style="font-size: 2rem; color: var(--accent-orange);"></i></div>
+                    <div>
+                        <h3 lang="en">Email</h3>
+                        <h3 lang="ar">البريد الإلكتروني</h3>
+                        <p>mushroomed.contactus@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-clock" style="font-size: 2rem; color: var(--primary-green);"></i></div>
+                    <div>
+                        <h3 lang="en">Business Hours</h3>
+                        <h3 lang="ar">ساعات العمل</h3>
+                        <p lang="en">Saturday - Thursday: 9 AM - 6 PM</p>
+                        <p lang="ar">السبت - الخميس: ٩ صباحاً - ٦ مساءً</p>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem;">
+                    <h3 style="color: var(--primary-green); margin-bottom: 1rem;" lang="en">Follow Us</h3>
+                    <h3 style="color: var(--primary-green); margin-bottom: 1rem;" lang="ar">تابعنا</h3>
+                    <div class="social-links">
+                        <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <form onsubmit="handleContactSubmit(event)" style="background: white; padding: 2rem; border-radius: 20px; box-shadow: 0 5px 20px rgba(0,0,0,0.1);">
+                <div class="form-group">
+                    <label lang="en">Name *</label>
+                    <label lang="ar">الاسم *</label>
+                    <input type="text" required placeholder="Your Name / اسمك">
+                </div>
+
+                <div class="form-group">
+                    <label lang="en">Email *</label>
+                    <label lang="ar">البريد الإلكتروني *</label>
+                    <input type="email" required placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label lang="en">Phone</label>
+                    <label lang="ar">الهاتف</label>
+                    <input type="tel" placeholder="+20 XXX XXX XXXX">
+                </div>
+
+                <div class="form-group">
+                    <label lang="en">Subject *</label>
+                    <label lang="ar">الموضوع *</label>
+                    <select required>
+                        <option value="" lang="en">Select a topic</option>
+                        <option value="" lang="ar">اختر موضوع</option>
+                        <option value="product" lang="en">Product Inquiry</option>
+                        <option value="product" lang="ar">استفسار عن المنتج</option>
+                        <option value="bulk" lang="en">Bulk Order</option>
+                        <option value="bulk" lang="ar">طلب بالجملة</option>
+                        <option value="feed" lang="en">Animal Feed</option>
+                        <option value="feed" lang="ar">أعلاف حيوانية</option>
+                        <option value="partnership" lang="en">Business Partnership</option>
+                        <option value="partnership" lang="ar">شراكة تجارية</option>
+                        <option value="other" lang="en">Other</option>
+                        <option value="other" lang="ar">أخرى</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label lang="en">Message *</label>
+                    <label lang="ar">الرسالة *</label>
+                    <textarea required placeholder="How can we help you? / كيف يمكننا مساعدتك؟"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    <span lang="en"><i class="fas fa-paper-plane"></i> Send Message</span>
+                    <span lang="ar"><i class="fas fa-paper-plane"></i> إرسال الرسالة</span>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Shopping Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2 lang="en">Shopping Cart</h2>
+            <h2 lang="ar">سلة التسوق</h2>
+            <button class="close-cart" onclick="toggleCart()">✕</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p style="text-align: center; padding: 2rem; color: var(--light-text);" lang="en">
+                Your cart is empty
+            </p>
+            <p style="text-align: center; padding: 2rem; color: var(--light-text);" lang="ar">
+                سلتك فارغة
+            </p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span lang="en">Total:</span>
+                <span lang="ar">الإجمالي:</span>
+                <span id="cartTotal">0 EGP</span>
+            </div>
+            <button class="checkout-btn" onclick="checkout()">
+                <span lang="en"><i class="fab fa-whatsapp"></i> Checkout via WhatsApp</span>
+                <span lang="ar"><i class="fab fa-whatsapp"></i> إتمام الطلب عبر واتساب</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h3 lang="en">About Mushroomed</h3>
+                    <h3 lang="ar">عن مشرومد</h3>
+                    <p lang="en">
+                        We're dedicated to providing premium iron-fortified mushroom products that promote health 
+                        and wellness naturally. Our mission is to combat iron deficiency through delicious, 
+                        sustainable nutrition.
+                    </p>
+                    <p lang="ar">
+                        نحن ملتزمون بتوفير منتجات مشروم معززة بالحديد بجودة عالية تعزز الصحة والعافية بشكل طبيعي.
+                        مهمتنا هي محاربة نقص الحديد من خلال تغذية لذيذة ومستدامة.
+                    </p>
+                </div>
+
+                <div class="footer-section">
+                    <h3 lang="en">Quick Links</h3>
+                    <h3 lang="ar">روابط سريعة</h3>
+                    <ul class="footer-links">
+                        <li><a href="#products" lang="en">Products</a><a href="#products" lang="ar">المنتجات</a></li>
+                        <li><a href="#benefits" lang="en">Benefits</a><a href="#benefits" lang="ar">الفوائد</a></li>
+                        <li><a href="#education" lang="en">Health Education</a><a href="#education" lang="ar">التوعية الصحية</a></li>
+                        <li><a href="#feed" lang="en">Animal Feed</a><a href="#feed" lang="ar">الأعلاف</a></li>
+                        <li><a href="#contact" lang="en">Contact</a><a href="#contact" lang="ar">اتصل بنا</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 lang="en">Customer Service</h3>
+                    <h3 lang="ar">خدمة العملاء</h3>
+                    <ul class="footer-links">
+                        <li><a href="#faq" lang="en">FAQ</a><a href="#faq" lang="ar">أسئلة شائعة</a></li>
+                        <li><a href="#" lang="en">Shipping Policy</a><a href="#" lang="ar">سياسة الشحن</a></li>
+                        <li><a href="#" lang="en">Return Policy</a><a href="#" lang="ar">سياسة الاسترجاع</a></li>
+                        <li><a href="#" lang="en">Privacy Policy</a><a href="#" lang="ar">سياسة الخصوصية</a></li>
+                        <li><a href="#" lang="en">Terms & Conditions</a><a href="#" lang="ar">الشروط والأحكام</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 lang="en">Newsletter</h3>
+                    <h3 lang="ar">النشرة البريدية</h3>
+                    <p lang="en">Subscribe for exclusive offers and health tips!</p>
+                    <p lang="ar">اشترك للحصول على عروض حصرية ونصائح صحية!</p>
+                    <form onsubmit="handleNewsletterSubmit(event)" style="margin-top: 1rem;">
+                        <input type="email" placeholder="your.email@example.com" required 
+                            style="width: 100%; padding: 0.8rem; border: none; border-radius: 10px; margin-bottom: 0.5rem;">
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <span lang="en">Subscribe</span>
+                            <span lang="ar">اشترك</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="social-links">
+                <a href="#" class="social-icon" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon" title="TikTok"><i class="fab fa-tiktok"></i></a>
+                <a href="#" class="social-icon" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+
+            <div class="copyright">
+                <p lang="en">&copy; 2026 Mushroomed. All rights reserved. | Made with <i class="fas fa-heart" style="color: var(--accent-red);"></i> in Egypt</p>
+                <p lang="ar">&copy; ٢٠٢٦ مشرومد. جميع الحقوق محفوظة. | صنع بـ <i class="fas fa-heart" style="color: var(--accent-red);"></i> في مصر</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Shopping Cart
+        let cart = [];
+        let cartTotal = 0;
+
+        function addToCart(productName, price) {
+            const existingItem = cart.find(item => item.name === productName);
+            if (existingItem) {
+                existingItem.quantity++;
+            } else {
+                cart.push({ name: productName, price: price, quantity: 1 });
+            }
+            updateCart();
+            showNotification(document.documentElement.lang === 'ar' ? 'تمت الإضافة للسلة!' : 'Added to cart!');
+        }
+
+        function updateCart() {
+            const cartItems = document.getElementById('cartItems');
+            const cartCount = document.getElementById('cartCount');
+            const cartTotalEl = document.getElementById('cartTotal');
+
+            if (cart.length === 0) {
+                cartItems.innerHTML = `<p style="text-align: center; padding: 2rem; color: var(--light-text);">
+                    <span lang="en">Your cart is empty</span>
+                    <span lang="ar">سلتك فارغة</span>
+                </p>`;
+                cartCount.textContent = '0';
+                cartTotal = 0;
+            } else {
+                cartItems.innerHTML = cart.map(item => `
+                    <div class="cart-item">
+                        <div class="cart-item-image">🍄</div>
+                        <div class="cart-item-info">
+                            <div class="cart-item-name">${item.name}</div>
+                            <div class="cart-item-price">${item.price} EGP</div>
+                            <div class="cart-item-quantity">
+                                <button class="qty-btn" onclick="changeQuantity('${item.name}', -1)">-</button>
+                                <span>${item.quantity}</span>
+                                <button class="qty-btn" onclick="changeQuantity('${item.name}', 1)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+
+                const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+                cartCount.textContent = totalItems;
+                cartTotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+            }
+            cartTotalEl.textContent = `${cartTotal.toFixed(2)} EGP`;
+        }
+
+        function changeQuantity(productName, change) {
+            const item = cart.find(i => i.name === productName);
+            if (item) {
+                item.quantity += change;
+                if (item.quantity <= 0) {
+                    cart = cart.filter(i => i.name !== productName);
+                }
+                updateCart();
+            }
+        }
+
+        function toggleCart() {
+            const sidebar = document.getElementById('cartSidebar');
+            sidebar.classList.toggle('active');
+        }
+
+        function checkout() {
+            if (cart.length === 0) {
+                alert(document.documentElement.lang === 'ar' ? 'سلتك فارغة!' : 'Your cart is empty!');
+                return;
+            }
+
+            const message = cart.map(item => 
+                `${item.name} x${item.quantity} = ${(item.price * item.quantity).toFixed(2)} EGP`
+            ).join('\n');
+            const total = `\n\nTotal: ${cartTotal.toFixed(2)} EGP`;
+            const whatsappText = encodeURIComponent(`Order from Mushroomed:\n\n${message}${total}`);
+            window.open(`https://wa.me/201273390881?text=${whatsappText}`, '_blank');
+        }
+
+        // Language Switching
+        function toggleLanguage() {
+            const html = document.documentElement;
+            const currentLang = html.getAttribute('lang') || 'en';
+            const newLang = currentLang === 'en' ? 'ar' : 'en';
+            html.setAttribute('lang', newLang);
+            
+            if (newLang === 'ar') {
+                document.body.style.direction = 'rtl';
+            } else {
+                document.body.style.direction = 'ltr';
+            }
+        }
+
+        // FAQ Toggle
+        function toggleFAQ(element) {
+            const answer = element.nextElementSibling;
+            const arrow = element.querySelector('span:last-child');
+            answer.classList.toggle('active');
+            arrow.textContent = answer.classList.contains('active') ? '▲' : '▼';
+        }
+
+        // Mobile Menu
+        function toggleMobileMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        // Form Handlers
+        function handleContactSubmit(event) {
+            event.preventDefault();
+            showNotification(document.documentElement.lang === 'ar' ? 'تم إرسال رسالتك بنجاح!' : 'Message sent successfully!');
+            event.target.reset();
+        }
+
+        function handleNewsletterSubmit(event) {
+            event.preventDefault();
+            showNotification(document.documentElement.lang === 'ar' ? 'تم الاشتراك بنجاح!' : 'Subscribed successfully!');
+            event.target.reset();
+        }
+
+        // Scroll to Contact
+        function scrollToContact() {
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Notification
+        function showNotification(message) {
+            const notification = document.createElement('div');
+            notification.textContent = message;
+            notification.style.cssText = `
+                position: fixed;
+                top: 100px;
+                right: 20px;
+                background: var(--success);
+                color: white;
+                padding: 1rem 2rem;
+                border-radius: 10px;
+                z-index: 10000;
+                animation: fadeIn 0.3s;
+                box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+            `;
+            document.body.appendChild(notification);
+            setTimeout(() => {
+                notification.remove();
+            }, 3000);
+        }
+
+        // Smooth Scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                    // Close mobile menu if open
+                    document.getElementById('navLinks').classList.remove('active');
+                }
+            });
+        });
+
+        // Animation on Scroll
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'all 0.6s ease-out';
+            observer.observe(el);
+        });
+
+        // Initialize language on page load
+        if (!document.documentElement.hasAttribute('lang')) {
+            document.documentElement.setAttribute('lang', 'en');
+        }
+    </script>
+</body>
+</html>
